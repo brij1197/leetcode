@@ -11,6 +11,6 @@ class Solution:
         for num in nums:
             summ+=num
             if summ>=k:
-                ans+=nums[summ-k]
+                ans+=prefix_arr[summ-k]
             prefix_arr[summ]+=1
         return ans
