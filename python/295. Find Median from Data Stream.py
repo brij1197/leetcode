@@ -8,10 +8,10 @@ class MedianFinder:
         while left<right:
             mid=(left+right)//2
             
-            if self.arr[mid]>num:
-                right=mid
-            else:
+            if self.arr[mid]<num:
                 left=mid+1
+            else:
+                right=mid
         self.arr.insert(left,num)
 
     def findMedian(self) -> float:
