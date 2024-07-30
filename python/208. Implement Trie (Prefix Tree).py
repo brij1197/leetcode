@@ -1,5 +1,3 @@
-from collections import deque
-
 class TrieNode:
     def __init__(self) -> None:
         self.children=[None]*26
